@@ -1,0 +1,186 @@
+
+# Quantum Network Analysis Report
+
+## Network Overview
+- **Description**: Optimal five-node quantum communication network designed for maximum entanglement distribution and secure communication. Based on GHZ-like state generation with strategic node placement for minimal loss and maximum connectivity.
+- **Vertices**: 10
+- **Edges**: 31
+- **Graph Type**: Connected
+
+## Graph Structure Analysis
+- **Is Bipartite**: False
+- **Is Tree**: False
+- **Density**: 0.6222
+- **Clustering Coefficient**: 0.4905
+- **Diameter**: 2
+
+## Mode Analysis
+- **Number of Modes**: 2
+- **Unique Modes**: [0, 1]
+- **Maximum Edge Weight**: 1.0000
+- **Complex Weights**: True
+
+## Functional Role Analysis
+- **Potential Sources**: []
+- **Potential Detectors**: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+- **Potential Ancillas**: []
+- **Leaf Nodes**: []
+- **Hub Nodes**: [3]
+
+## Degree Statistics
+- **Mean Degree**: 6.20
+- **Degree Range**: 4 - 9
+- **Degree Standard Deviation**: 1.40
+
+## Quantum State Analysis
+- **Has Target State**: True
+- **Single Emitters**: []
+- **Entanglement Type**: general_entangled
+- **Particle Number**: 5
+
+## Implementation Strategy
+- **Analysis Type**: Graph Structure Based
+- **Sources Identified**: 4
+- **Detectors Identified**: 9
+- **Beam Splitters**: 1
+- **Ancillas**: 5
+- **Requires Heralding**: True
+- **Complexity Level**: complex
+
+## Optical Elements
+- **Sources**: [0, 1, 2, 4]
+- **Detectors**: [0, 1, 2, 4, 5, 6, 7, 8, 9]
+- **Beam Splitters**: [3]
+- **Ancillas**: [5, 6, 7, 8, 9]
+
+## Graph Motifs
+- **Triangles**: 24
+- **Squares**: 89
+- **Stars**: 10
+
+## Edge Details
+- Edge 0-3 (modes 1-0): -1.000000
+- Edge 6-9 (modes 0-0): -1.000000
+- Edge 0-5 (modes 1-0): 0.576256
+- Edge 0-4 (modes 0-0): 0.759909
+- Edge 0-9 (modes 0-0): 0.784784
+- Edge 3-9 (modes 0-0): 0.792336
+- Edge 0-8 (modes 0-0): -0.792903
+- Edge 3-8 (modes 0-0): 0.795510
+- Edge 1-3 (modes 0-1): 0.882200
+- Edge 3-4 (modes 0-1): -0.883237
+- Edge 2-3 (modes 0-1): -0.883748
+- Edge 2-3 (modes 1-0): -0.893060
+- Edge 3-4 (modes 1-0): -0.894884
+- Edge 1-3 (modes 1-0): 0.898116
+- Edge 4-8 (modes 0-0): -0.996920
+- Edge 8-9 (modes 0-0): -1.000000
+- Edge 7-9 (modes 0-0): -1.000000
+- Edge 7-8 (modes 0-0): 1.000000
+- Edge 6-8 (modes 0-0): 1.000000
+- Edge 4-9 (modes 0-0): 1.000000
+- Edge 4-6 (modes 0-0): -1.000000
+- Edge 2-8 (modes 0-0): -1.000000
+- Edge 2-7 (modes 0-0): -1.000000
+- Edge 2-6 (modes 0-0): -1.000000
+- Edge 2-5 (modes 1-0): 1.000000
+- Edge 1-9 (modes 0-0): -1.000000
+- Edge 1-7 (modes 0-0): 1.000000
+- Edge 1-6 (modes 0-0): 1.000000
+- Edge 1-5 (modes 1-0): -1.000000
+- Edge 0-6 (modes 0-0): -1.000000
+- Edge 4-5 (modes 1-0): 1.000000
+
+
+## Configuration Details
+```json
+{
+  "description": "Optimal five-node quantum communication network designed for maximum entanglement distribution and secure communication. Based on GHZ-like state generation with strategic node placement for minimal loss and maximum connectivity.",
+  "network_type": "QKD",
+  "num_nodes": 5,
+  "num_anc": 5,
+  "num_pre": 1,
+  "bulk_thr": 0,
+  "loss_func": "cr",
+  "optimizer": "L-BFGS-B",
+  "ftol": 1e-06,
+  "imaginary": false,
+  "real": true,
+  "safe_hist": true,
+  "samples": 25,
+  "tries_per_edge": 5,
+  "edges_tried": 35,
+  "target_state": [
+    "00011",
+    "00101",
+    "01001",
+    "10001",
+    "01010",
+    "10010",
+    "10100",
+    "11000",
+    "00110",
+    "01100"
+  ],
+  "removed_connections": [],
+  "thresholds": [
+    0.25,
+    0.05
+  ],
+  "topopt": true,
+  "seed": 1217921511,
+  "in_nodes": [],
+  "out_nodes": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "single_emitters": [],
+  "unicolor": false,
+  "amplitudes": [],
+  "heralding_out": false,
+  "number_resolving": false,
+  "brutal_covers": false,
+  "bipartite": false,
+  "save_hist": true,
+  "dimensions": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "verts": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "anc_detectors": [
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "foldername": "5node_optimal_network"
+}
+```
+
+## Analysis Metadata
+- **Analysis Date**: 2025-07-08 14:50:15
+- **Interpreter Version**: General Quantum Network Interpreter v1.0
+- **Analysis Method**: Dynamic graph structure analysis

@@ -1,7 +1,6 @@
 # PyTheus Quantum Network Interpreter
 
-[![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+**Author**: Rithvik ([@rithvik1122](https://github.com/rithvik1122))
 
 A comprehensive interpreter for analyzing and visualizing PyTheus-optimized quantum networks. This tool automatically analyzes complex quantum architectures discovered through automated optimization, providing robust algorithms for functional role identification, graph-theoretical analysis, and physically meaningful visualization.
 
@@ -174,17 +173,24 @@ python -m pytest tests/
 
 ## Citation
 
-If you use this interpreter in your research, please cite:
+If you use this work in your research, please cite:
 
 ```bibtex
-@article{pytheus_interpreter_2025,
-  title={A Generalized PyTheus Quantum Network Interpreter: Automated Analysis and Visualization of Optimized Quantum Architectures},
-  author={Research Team},
-  journal={Quantum Information Laboratory},
-  year={2025},
-  note={Available at: https://github.com/your-username/pytheus-quantum-network-interpreter}
+@software{rithvik2025pytheus,
+  author = {Rithvik},
+  title = {PyTheus Quantum Network Interpreter: A Comprehensive Tool for Analyzing and Visualizing PyTheus-Optimized Quantum Networks},
+  year = {2025},
+  url = {https://github.com/rithvik1122/pytheus-quantum-network-interpreter},
+  version = {1.0.0}
 }
 ```
+
+## Author
+
+**Rithvik** - Creator and Lead Developer
+- GitHub: [@rithvik1122](https://github.com/rithvik1122)
+
+See [AUTHORS.md](AUTHORS.md) for detailed contribution information.
 
 ## License
 

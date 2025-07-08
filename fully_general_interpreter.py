@@ -1,8 +1,23 @@
 #!/usr/bin/env python3
 """
-Fully General PyTheus Quantum Network Interpreter
+PyTheus Quantum Network Interpreter
 
-This interpreter is completely general and adaptive, analyzing any quantum network
+A comprehensive interpreter for analyzing and visualizing PyTheus-optimized quantum networks.
+
+Author: Rithvik
+GitHub: https://github.com/rithvik1122/pytheus-quantum-network-interpreter
+License: MIT
+Version: 1.0.0
+Date: July 2025
+
+This module provides tools for:
+- Loading and parsing PyTheus quantum network configurations
+- Analyzing network topology and identifying functional components
+- Generating optical table layout visualizations
+- Creating native PyTheus-style graph plots
+- Producing comprehensive analysis reports
+
+The interpreter is completely general and adaptive, analyzing any quantum network
 structure dynamically without hardcoded network types or assumptions.
 It generates physically meaningful optical table setups and PyTheus-style graphs
 for any quantum state or network configuration.

@@ -1,0 +1,114 @@
+
+# Quantum Network Analysis Report
+
+## Network Overview
+- **Description**: Four particle W state from four single photon sources
+- **Vertices**: 8
+- **Edges**: 10
+- **Graph Type**: Connected
+
+## Graph Structure Analysis
+- **Is Bipartite**: True
+- **Is Tree**: False
+- **Density**: 0.3571
+- **Clustering Coefficient**: 0.0000
+- **Diameter**: 4
+
+## Mode Analysis
+- **Number of Modes**: 2
+- **Unique Modes**: [0, 1]
+- **Maximum Edge Weight**: 1.0000
+- **Complex Weights**: True
+
+## Functional Role Analysis
+- **Potential Sources**: [4, 5, 6, 7]
+- **Potential Detectors**: [0, 1, 2, 3]
+- **Potential Ancillas**: []
+- **Leaf Nodes**: []
+- **Hub Nodes**: [5]
+
+## Degree Statistics
+- **Mean Degree**: 2.50
+- **Degree Range**: 2 - 4
+- **Degree Standard Deviation**: 0.71
+
+## Quantum State Analysis
+- **Has Target State**: True
+- **Single Emitters**: [4, 5, 6, 7]
+- **Entanglement Type**: w_state
+- **Particle Number**: 4
+
+## Implementation Strategy
+- **Analysis Type**: Graph Structure Based
+- **Sources Identified**: 4
+- **Detectors Identified**: 4
+- **Beam Splitters**: 0
+- **Ancillas**: 0
+- **Requires Heralding**: False
+- **Complexity Level**: complex
+
+## Optical Elements
+- **Sources**: [4, 5, 6, 7]
+- **Detectors**: [0, 1, 2, 3]
+- **Beam Splitters**: []
+- **Ancillas**: []
+
+## Graph Motifs
+- **Triangles**: 0
+- **Squares**: 3
+- **Stars**: 3
+
+## Edge Details
+- Edge 1-6 (modes 0-0): 1.000000
+- Edge 3-4 (modes 0-0): -1.000000
+- Edge 3-7 (modes 0-0): -1.000000
+- Edge 0-7 (modes 0-0): -1.000000
+- Edge 2-5 (modes 1-0): 1.000000
+- Edge 2-6 (modes 0-0): 1.000000
+- Edge 0-5 (modes 1-0): -1.000000
+- Edge 1-4 (modes 0-0): 1.000000
+- Edge 1-5 (modes 1-0): 1.000000
+- Edge 3-5 (modes 1-0): -1.000000
+
+
+## Configuration Details
+```json
+{
+  "description": "Four particle W state from four single photon sources",
+  "bulk_thr": 0,
+  "edges_tried": 30,
+  "foldername": "w4_sp",
+  "ftol": 1e-06,
+  "loss_func": "cr",
+  "num_anc": 0,
+  "num_pre": 1,
+  "optimizer": "L-BFGS-B",
+  "imaginary": false,
+  "real": true,
+  "safe_hist": true,
+  "samples": 10,
+  "target_state": [
+    "0001",
+    "0010",
+    "0100",
+    "1000"
+  ],
+  "single_emitters": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "thresholds": [
+    0.35,
+    0.1
+  ],
+  "tries_per_edge": 5,
+  "unicolor": false
+}
+```
+
+## Analysis Metadata
+- **Analysis Date**: 2025-07-17 15:54:10
+- **Interpreter Version**: Modular Quantum Network Interpreter v1.0
+- **Analysis Method**: Dynamic graph structure analysis

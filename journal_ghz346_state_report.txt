@@ -1,0 +1,114 @@
+
+# Quantum Network Analysis Report
+
+## Network Overview
+- **Description**: Finding a setup for the creation of the three-particle four-dimensional GHZ state. It can be realized with three ancillary particles
+- **Vertices**: 6
+- **Edges**: 17
+- **Graph Type**: Connected
+
+## Graph Structure Analysis
+- **Is Bipartite**: False
+- **Is Tree**: False
+- **Density**: 0.8000
+- **Clustering Coefficient**: 0.7278
+- **Diameter**: 2
+
+## Mode Analysis
+- **Number of Modes**: 4
+- **Unique Modes**: [0, 1, 2, 3]
+- **Maximum Edge Weight**: 1.0000
+- **Complex Weights**: True
+
+## Functional Role Analysis
+- **Potential Sources**: []
+- **Potential Detectors**: [0, 1, 2, 3, 4, 5]
+- **Potential Ancillas**: []
+- **Leaf Nodes**: []
+- **Hub Nodes**: [0]
+
+## Degree Statistics
+- **Mean Degree**: 5.67
+- **Degree Range**: 3 - 7
+- **Degree Standard Deviation**: 1.25
+
+## Quantum State Analysis
+- **Has Target State**: True
+- **Single Emitters**: []
+- **Entanglement Type**: ghz_state
+- **Particle Number**: 3
+
+## Implementation Strategy
+- **Analysis Type**: Graph Structure Based
+- **Sources Identified**: 3
+- **Detectors Identified**: 6
+- **Beam Splitters**: 2
+- **Ancillas**: 3
+- **Requires Heralding**: True
+- **Complexity Level**: complex
+
+## Optical Elements
+- **Sources**: [0, 1, 2]
+- **Detectors**: [0, 1, 2, 3, 4, 5]
+- **Beam Splitters**: [3, 5]
+- **Ancillas**: [3, 4, 5]
+
+## Graph Motifs
+- **Triangles**: 9
+- **Squares**: 16
+- **Stars**: 6
+
+## Edge Details
+- Edge 0-1 (modes 0-0): -1.000000
+- Edge 0-1 (modes 2-1): 1.000000
+- Edge 0-2 (modes 3-3): 1.000000
+- Edge 0-3 (modes 1-0): 1.000000
+- Edge 0-3 (modes 2-0): -1.000000
+- Edge 0-5 (modes 1-0): 1.000000
+- Edge 0-5 (modes 2-0): 1.000000
+- Edge 1-2 (modes 2-2): 1.000000
+- Edge 1-3 (modes 3-0): -1.000000
+- Edge 1-4 (modes 1-0): 1.000000
+- Edge 1-5 (modes 3-0): 1.000000
+- Edge 2-3 (modes 0-0): 1.000000
+- Edge 2-3 (modes 1-0): 1.000000
+- Edge 2-5 (modes 0-0): -1.000000
+- Edge 2-5 (modes 1-0): 1.000000
+- Edge 3-4 (modes 0-0): 1.000000
+- Edge 4-5 (modes 0-0): -1.000000
+
+
+## Configuration Details
+```json
+{
+  "description": "Finding a setup for the creation of the three-particle four-dimensional GHZ state. It can be realized with three ancillary particles",
+  "bulk_thr": 0.01,
+  "edges_tried": 20,
+  "foldername": "ghz_346",
+  "ftol": 1e-06,
+  "loss_func": "cr",
+  "num_anc": 3,
+  "num_pre": 1,
+  "optimizer": "L-BFGS-B",
+  "imaginary": false,
+  "safe_hist": true,
+  "samples": 1,
+  "target_state": [
+    "000",
+    "111",
+    "222",
+    "333"
+  ],
+  "thresholds": [
+    0.25,
+    0.1
+  ],
+  "tries_per_edge": 5,
+  "unicolor": false
+}
+```
+
+## Analysis Metadata
+- **Analysis Date**: 2025-07-17 15:54:11
+- **Interpreter Version**: Modular Quantum Network Interpreter v1.0
+- **Analysis Method**: Dynamic graph structure analysis

@@ -1,18 +1,27 @@
-# PyTheus Quantum Network Interpreter
+# PyTheus Modular Quantum Network Interpreter
 
 **Author**: Rithvik ([@rithvik1122](https://github.com/rithvik1122))
 
-A comprehensive interpreter for analyzing and visualizing PyTheus-optimized quantum networks. This tool automatically analyzes complex quantum architectures discovered through automated optimization, providing robust algorithms for functional role identification, graph-theoretical analysis, and physically meaningful visualization.
+A modular interpreter for analyzing and visualizing PyTheus-optimized quantum networks from tested network classes. This tool automatically analyzes quantum architectures discovered through automated optimization, providing robust algorithms for functional role identification, graph-theoretical analysis, and physically meaningful visualization for validated network types.
 
 ![5-Node QKD Network](examples/5node_qkd_network/5node_corrected_optical_table_setup.png)
 
 ## Features
 
-- **Automated Network Analysis**: Identifies sources, detectors, beam splitters, and ancillas from raw PyTheus graph data
+- **Modular Network Analysis**: Identifies sources, detectors, beam splitters, and ancillas from raw PyTheus graph data for tested network classes
 - **Dual Visualization**: Generates both native graph plots and optical table representations
 - **Multi-Modal Input**: Accepts file-based configurations and in-memory data structures
 - **Physical Implementation Insights**: Provides technical justification for discovered architectures
 - **Comprehensive Validation**: Ensures consistency between mathematical and physical representations
+
+## Supported Network Types
+
+The interpreter has been validated on major PyTheus network classes:
+
+- **Single-Photon Source Networks**: W4 states, symmetric multiparty entanglement
+- **Heralded Bell State Preparations**: 2-party Bell states with ancilla heralding
+- **Multi-Dimensional GHZ States**: Complex entanglement with high-dimensional quantum states
+- **Multi-Party QKD Architectures**: Secure communication networks with distributed sources
 
 ## Installation
 
@@ -34,7 +43,7 @@ cd pytheus-quantum-network-interpreter
 ### Basic Usage
 
 ```python
-from fully_general_interpreter import create_interpreter, analyze_quantum_network
+from modular_interpreter import ModularQuantumNetworkInterpreter
 import json
 
 # Load your config and graph data
@@ -44,34 +53,28 @@ with open("examples/5node_qkd_network/config.json", 'r') as f:
 with open("examples/5node_qkd_network/best.json", 'r') as f:
     graph_data = json.load(f)
 
-# Method 1: Using convenience function
-results = analyze_quantum_network(
-    config=config_data,
-    graph=graph_data,
-    base_filename="my_analysis"
+# Create interpreter instance
+interpreter = ModularQuantumNetworkInterpreter(
+    config_data=config_data,
+    graph_data=graph_data,
+    verbose=True
 )
+# Run complete analysis
+results = interpreter.run_complete_analysis(output_prefix="my_analysis")
 
-# Method 2: Using the interpreter class
-interpreter = create_interpreter(
-    config=config_data,
-    graph=graph_data
-)
-
-# Generate visualizations
+# Generate individual outputs
 interpreter.plot_optical_table_setup("optical_layout.png")
 interpreter.plot_native_graph("graph_visualization.png")
-
-# Generate comprehensive analysis
 interpreter.generate_analysis_report("network_analysis.txt")
 ```
 
 ### Advanced Usage
 
 ```python
-from fully_general_interpreter import GeneralQuantumNetworkInterpreter
+from modular_interpreter import ModularQuantumNetworkInterpreter
 
 # Initialize with in-memory data
-interpreter = GeneralQuantumNetworkInterpreter()
+interpreter = ModularQuantumNetworkInterpreter()
 interpreter.load_config(config_data=your_config_dict)
 interpreter.load_graph(graph_data=your_graph_dict)
 
@@ -110,8 +113,8 @@ examples/5node_qkd_network/
 
 ### Core Classes
 
-#### `GeneralQuantumNetworkInterpreter`
-Main interpreter class for analyzing PyTheus quantum networks.
+#### `ModularQuantumNetworkInterpreter`
+Main interpreter class for analyzing PyTheus quantum networks from tested classes.
 
 **Methods:**
 - `load_config(config_source)`: Load network configuration
@@ -210,7 +213,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Keywords**: quantum networks, PyTheus, automated design, network interpretation, quantum key distribution, integrated photonics, beam splitter networks, quantum optimization
+**Keywords**: quantum networks, PyTheus, modular design, network interpretation, quantum key distribution, integrated photonics, beam splitter networks, quantum optimization
 
 **Version**: 1.0.0  
-**Last Updated**: July 8, 2025
+**Last Updated**: July 17, 2025

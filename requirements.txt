@@ -1,0 +1,20 @@
+# PyTheus Modular Quantum Network Interpreter Requirements
+# Core dependencies for quantum network analysis and visualization
+
+# Scientific computing
+numpy>=1.21.0
+matplotlib>=3.5.0
+networkx>=2.6.0
+
+# Optional dependencies for enhanced functionality
+scipy>=1.7.0  # For advanced network analysis
+sympy>=1.8.0  # For symbolic quantum state manipulation
+
+# Development dependencies (optional)
+pytest>=6.2.0  # For testing
+black>=21.0.0  # For code formatting
+flake8>=3.9.0  # For code linting
+
+# Documentation dependencies (optional)
+sphinx>=4.0.0  # For documentation generation
+sphinx-rtd-theme>=0.5.0  # For documentation theming

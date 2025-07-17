@@ -40,17 +40,17 @@
 
 ## Implementation Strategy
 - **Analysis Type**: Graph Structure Based
-- **Sources Identified**: 4
-- **Detectors Identified**: 9
-- **Beam Splitters**: 1
+- **Sources Identified**: 5
+- **Detectors Identified**: 10
+- **Beam Splitters**: 5
 - **Ancillas**: 5
 - **Requires Heralding**: True
 - **Complexity Level**: complex
 
 ## Optical Elements
-- **Sources**: [0, 1, 2, 4]
-- **Detectors**: [0, 1, 2, 4, 5, 6, 7, 8, 9]
-- **Beam Splitters**: [3]
+- **Sources**: [0, 1, 2, 3, 4]
+- **Detectors**: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+- **Beam Splitters**: [6, 9, 5, 8, 7]
 - **Ancillas**: [5, 6, 7, 8, 9]
 
 ## Graph Motifs
@@ -181,6 +181,6 @@
 ```
 
 ## Analysis Metadata
-- **Analysis Date**: 2025-07-08 14:50:15
-- **Interpreter Version**: General Quantum Network Interpreter v1.0
+- **Analysis Date**: 2025-07-17 15:54:09
+- **Interpreter Version**: Modular Quantum Network Interpreter v1.0
 - **Analysis Method**: Dynamic graph structure analysis

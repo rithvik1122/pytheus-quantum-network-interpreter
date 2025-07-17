@@ -12,11 +12,11 @@ setup(
     name="pytheus-quantum-network-interpreter",
     version="1.0.0",
     author="Rithvik",
-    author_email="rithvik1122@gmail.com",
-    description="A comprehensive interpreter for analyzing and visualizing PyTheus-optimized quantum networks",
+    author_email="rithvik1122@example.com",
+    description="A modular interpreter for analyzing and visualizing PyTheus-optimized quantum networks from tested classes",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/rithvik1122/pytheus-quantum-network-interpreter",
+    url="https://github.com/your-username/pytheus-quantum-network-interpreter",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 4 - Beta",
@@ -35,8 +35,8 @@ setup(
     install_requires=requirements,
     keywords="quantum networks, PyTheus, automated design, network interpretation, quantum key distribution",
     project_urls={
-        "Bug Reports": "https://github.com/rithvik1122/pytheus-quantum-network-interpreter/issues",
-        "Source": "https://github.com/rithvik1122/pytheus-quantum-network-interpreter",
-        "Documentation": "https://github.com/rithvik1122/pytheus-quantum-network-interpreter/tree/main/docs",
+        "Bug Reports": "https://github.com/your-username/pytheus-quantum-network-interpreter/issues",
+        "Source": "https://github.com/your-username/pytheus-quantum-network-interpreter",
+        "Documentation": "https://github.com/your-username/pytheus-quantum-network-interpreter/tree/main/docs",
     },
 )
